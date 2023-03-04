@@ -1,0 +1,70 @@
+// 1) (linguagem C)
+//Soma = 91
+#include <stdio.h>
+
+int main()
+{
+    int indice=13, soma=0, k=0, i=0;
+    
+    for(i=0 ; i<indice ; i++){
+        k = k+1;
+        soma = soma + k;
+    }
+    printf("Soma: %d", soma);
+    return 0;
+}
+
+//----------------------------------------
+// 2) (linguagem C)
+#include<stdio.h>
+int main ()
+{
+    unsigned vet[4];
+    unsigned int i;
+    vet[0]=0;
+    vet[1]=1;
+    vet[2]=0;
+    vet[3]=0;
+ 
+    printf("Informe o numero a ser comparado: ");
+    scanf("%u", &vet[3]);
+    for (i=0;i<vet[3];i++)
+    {    
+        vet[2] = vet[0] + vet[1];
+        if(vet[2] == vet[3])
+        {
+            printf("O valor pertence a sequencia.\n");            
+            return 0;
+        }
+        vet[0] = vet[1];
+        vet[1] = vet[2];
+    }
+    printf("O valor não pertence a sequencia.\n");
+    return 0;
+}
+
+//----------------------------------------
+// 3)
+a) 1, 3, 5, 7, 9
+b) 2, 4, 8, 16, 32, 64, 128
+c) 0, 1, 4, 9, 16, 25, 36, 49
+d) 4, 16, 36, 64, 100
+e) 1, 1, 2, 3, 5, 8, 13
+f) 2, 10, 12, 16, 17, 18, 19, 20
+
+//----------------------------------------
+4) 
+Os dois veículos estão à mesma distância de Ribeirão Preto.
+Como a pergunta é sobre a proximidade (distância) dos veículos até a cidade e não sobre qual veículo chegará primeiro no momento em que se cruzam,
+não é necessário realizar cálculos, pois quando os veículos se cruzam, ou seja, quando estão no mesmo local na rodovia,
+a partir dali até Ribeirão preto a distância é a mesma.
+
+//----------------------------------------
+5) (python)
+def main():
+    print("Olá")
+    txt = input("Digite um texto: ")
+    print(txt[::-1])
+    return txt
+
+main()
